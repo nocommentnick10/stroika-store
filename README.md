@@ -1,0 +1,2 @@
+# stroika-store
+StroikaStore project
