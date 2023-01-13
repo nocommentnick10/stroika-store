@@ -1,0 +1,21 @@
+.location{
+    position: relative;
+    padding-left: 28px;
+    
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.45;
+    color: #5D6066;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+
+        background-image: url(./../../img/header-top/map-icon.svg);
+    }
+}

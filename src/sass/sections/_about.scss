@@ -1,0 +1,40 @@
+.about{
+    margin-bottom: 40px;
+
+    @media (min-width: 768px){
+        margin-bottom: 50px;
+    }
+
+    &__wrapper{
+
+        @media (min-width: 768px){
+            padding: 40px 20px 40px 198px;
+
+            background-image: url(./../../img/about/about-bg.jpg);
+            background-size: cover;
+        }
+
+        @media (min-width: 1440px){
+            padding-right: 300px;
+        }
+    }
+
+    &__heading{
+        margin-bottom: 16px;
+    }
+
+    &__content{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 1.45;
+        color: #2F323A;
+
+        @media (min-width: 768px){
+            font-size: 16px;
+        }
+
+        p + p{
+            margin-top: 15px;
+        }
+    }
+}

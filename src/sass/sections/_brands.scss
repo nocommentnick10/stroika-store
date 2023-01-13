@@ -1,0 +1,21 @@
+.brands{
+    margin-bottom: 40px;
+
+    @media (min-width: 768px){
+        margin-bottom: 50px;
+    }
+
+    &__heading{
+        margin-bottom: 16px;
+    }
+}
+
+.brands__item{
+
+    img{
+        @media (min-width: 768px){
+            width: 180px;
+        }
+        object-fit: cover;
+    }
+}

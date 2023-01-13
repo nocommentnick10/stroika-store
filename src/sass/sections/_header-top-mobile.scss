@@ -1,0 +1,78 @@
+.header-top-mobile{
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 6px 0px;
+
+    background-color: white;
+
+    z-index: 99999;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__btn{
+        width: 20px;
+    }
+
+    &__btn-mid{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 3px;
+        border-radius: 50px;
+        background-color: #000;
+        transition: all 0.2s ease-in;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: -6px;
+            left: 0;
+            width: 13px;
+            height: 3px;
+            background-color: #000;
+            border-radius: 50px;
+            transition: transform .2s ease-in,top .2s linear .2s,background-color .2s ease-in;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: 0;
+            width: 22px;
+            height: 3px;
+            border-radius: 50px;
+            background-color: #000;
+            transition: transform .2s ease-in,top .2s linear .2s,background-color .2s ease-in;
+        }
+    }
+}
+
+.btn--active{
+    background-color: transparent!important;
+    width: 0px;
+    transition: 0.2s ease-in;
+
+    &::before {
+        transform: rotate(45deg);
+        width: 30px;
+        top: 0;
+        transition: width 0.2s linear, top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+        width: 30px;
+        top: 0;
+        transition: width 0.2s linear, top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+}

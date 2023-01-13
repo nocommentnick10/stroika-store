@@ -1,0 +1,29 @@
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+
+// Blocks
+
+@import "./blocks/btn";
+@import "./blocks/location";
+@import "./blocks/cities";
+@import "./blocks/main-title";
+@import "./blocks/cards";
+@import "./blocks/btn-all";
+@import "./blocks/reviews-slider";
+
+// Sections
+
+@import "./sections/header-top-mobile";
+@import "./sections/mobile-menu";
+@import "./sections/header-search";
+@import "./sections/mobile-slider-top";
+@import "./sections/stock";
+@import "./sections/popular";
+@import "./sections/goods";
+@import "./sections/brands";
+@import "./sections/reviews";
+@import "./sections/about";
+@import "./sections/footer";
+@import "./sections/header-top-xs";

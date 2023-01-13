@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>СтройкаСтор</title>
+		<meta name="description" content="В СтройкаСтор вы всегда можете купить все необходимые товары для ремонта домаи дачи." />
+		<meta name="keywords" content="стройка стор, стройка, строительный магазин, ремонт, строй товары, отделочные материалы, пиломатериалы, обои, товары для дачи, товары для ремонта" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./libs/micromodal/micromodal.css">
+		<link rel="stylesheet" href="./libs/micromodal/micromodal.theme.css">
+		<link rel="stylesheet" href="./libs/owlcarousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="./libs/owlcarousel/assets/owl.theme.default.min.css">
+
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Строительный магазин StroykaStore" />
+		<meta property="og:description" content="Специальные предложения на товары для ремонта" />
+		<meta property="og:image" content="./img/opengraph.jpg"/>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf">
+		<link rel="shortcut icon" href="./img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+
+        <!-- HeaderTopMobile -->
+		<div class="header-top-mobile">
+		    <div class="container">
+		        <div class="header-top-mobile__wrapper">
+		            <button id="mobileBtn" class="header-top-mobile__btn">
+		                <!-- <img src="./img/mobile-menu/menu.svg" alt="Меню" width="40" height="40"> -->
+		                <span id="btn-mid" class="header-top-mobile__btn-mid"></span>
+		            </button>
+		            <img src="./img/header/Logo.svg" alt="Логотип">
+		            <a href="#!" class="header-top-mobile__btn">
+		                <img src="./img/mobile-menu/cart.svg" alt="Корзина" width="40" height="40">
+		            </a>
+		        </div>
+		
+		        <section id="mobileMenu" class="mobile-menu none">
+		            <!-- <div class="container"> -->
+		                <div class="mobile-menu__wrapper">
+		        
+		                    <a href="#!" class="btn btn--catalogue">
+		                        Каталог
+		                    </a>
+		        
+		                    <a href="#!" class="mobile-menu__btn">
+		                        Профиль
+		                    </a>
+		        
+		                    <a href="#!" class="mobile-menu__btn">
+		                        Заказы
+		                    </a>
+		        
+		                    <button id="locationBtn" class="location" data-micromodal-trigger="modal-1">
+		                        Москва
+		                    </button>
+		        
+		                </div>
+		            <!-- </div> -->
+		        </section>
+		    </div>
+		</div>
+        <!-- //HeaderTopMobile -->
+
+		<!-- HeaderTopTabletXS -->
+
+		<div class="header-top-xs">
+		    <!-- <div class="container"> -->
+		        <div class="header-top-xs__wrapper">
+		
+		            <div class="header-top-xs-row-t">
+		                <div class="container">
+		                    <div class="header-top-xs-row-t__wrapper">
+		                        <div class="header-top-xs-row-t__location">
+		                            <button id="locationBtnXs" class="location" data-micromodal-trigger="modal-1">
+		                                Москва
+		                            </button>
+		                        </div>
+		        
+		                        <nav class="header-top-xs-row-t__nav">
+		                            <ul>
+		                                <li><a href="#!">Доставка</a></li>
+		                                <li><a href="#!">Возврат</a></li>
+		                                <li><a href="#!">Документация</a></li>
+		                                <li><a href="#!">Контакты</a></li>
+		                            </ul>
+		                        </nav>
+		                    </div>
+		                </div>
+		            </div>
+		
+		            <div class="header-top-xs-row-b">
+		                <div class="container">
+		                    <div class="header-top-xs-row-b__wrapper">
+		
+		                        <img src="./img/header/Logo.svg" alt="Logo">
+		                        <a href="#!" class="btn btn--header">Каталог</a>
+		                        <form class="search-mobile-md">
+		                            <input type="text" name="search" placeholder="Поиск">
+		                            <button type="submit"><img src="./img/header/search-icon.svg" alt="Искать"></button>
+		                        </form>
+		                        <ul>
+		                            <li><a href="#!"><img src="./img/header/profile-icon.svg" alt="Профиль">Профиль</a></li>
+		                            <li><a href="#!"><img src="./img/header/order-icon.svg" alt="Заказы">Заказы</a></li>
+		                            <li><a href="#!"><img src="./img/header/cart-icon.svg" alt="Корзина">Корзина</a></li>
+		                        </ul>
+		
+		                    </div>
+		
+		                </div>
+		            </div>
+		
+		        </div>
+		    <!-- </div> -->
+		</div>
+
+		<!-- HeaderTopTabletXS -->
+
+		<!-- MicroModal -->
+
+		<div id="modal-1" class="modal micromodal-slide" aria-hidden="true">
+		    <div tabindex="-1" data-micromodal-close class="modal__overlay">
+		
+		        <button class="modal-close" data-micromodal-close>
+		        </button>
+		
+		        <div
+		            role="dialog"
+		            aria-modal="true"
+		            class="modal__container"
+		        >
+		            
+		            <h2 class="main-title">Выберите ваш город</h2>
+		
+		            <div class="cities">
+		                <div class="cities__col">
+		                    <ul>
+		                        <li><button class="modal-btn" data-micromodal-close>Москва</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Екатеринбург</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Челябинск</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Уфа</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Воронеж</button></li>
+		                    </ul>
+		                </div>
+		                <div class="cities__col">
+		                    <ul>
+		                        <li><button class="modal-btn" data-micromodal-close>Санкт-Петербург</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Казань</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Самара</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Омск</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Пермь</button></li>
+		                    </ul>
+		                </div>
+		            </div>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //MicroModal -->
+
+		<!-- HeaderSearch -->
+
+		<section class="header-top-search">
+		    <div class="container">
+		        <div class="header-top-search__wrapper">
+		
+		            <form class="search-mobile">
+		                <input type="text" name="search" placeholder="Поиск">
+		                <button type="submit"><img src="./img/header/search-icon.svg" alt="Искать"></button>
+		            </form>
+		
+		        </div>
+		    </div>
+		</section>
+
+		<!-- //HeaderSearch -->
+
+		<!-- MobileTopSLider -->
+
+		<section class="mobile-slider-top">
+		    <div class="container">
+		        <div class="mobile-slider-top__wrapper">
+		
+		            <div id="mobile-slider-top" class="mobile-slider-top__slider owl-carousel owl-theme">
+		
+		                <div class="mobile-slider-top__slider-item">
+		
+		                    <!-- <img src="./img/mobile-slider/slide1.png" alt="Специальные предложения"> -->
+		
+		                    <picture>
+		                        <source srcset="./img/mobile-slider/slide1-lg.png"
+		                                media="(min-width: 1440px)">
+		                        <source srcset="./img/mobile-slider/slide1-md.png"
+		                                media="(min-width: 1024px)">
+		                        <source srcset="./img/mobile-slider/slide1-xs.png"
+		                                media="(min-width: 768px)">
+		                                <img src="./img/mobile-slider/slide1.png" alt="">
+		                    </picture>
+		
+		                    <div class="mobile-slider-top__slider-item-content">
+		                        <h2 class="main-title main-title--slider">
+		                            Специальные предложения
+		                        </h2>
+		                        <p>на строительные материалы и товары для ремонта</p>
+		                        <button class="btn btn--slider">Подробнее</button>
+		                    </div>
+		
+		                </div>
+		
+		                <div class="mobile-slider-top__slider-item">
+		
+		                    <!-- <img src="./img/mobile-slider/slide1.png" alt="Специальные предложения"> -->
+		
+		                    <picture>
+		                        <source srcset="./img/mobile-slider/slide1-lg.png"
+		                                media="(min-width: 1440px)">
+		                        <source srcset="./img/mobile-slider/slide1-md.png"
+		                                media="(min-width: 1024px)">
+		                        <source srcset="./img/mobile-slider/slide1-xs.png"
+		                                media="(min-width: 768px)">
+		                                <img src="./img/mobile-slider/slide1.png" alt="">
+		                    </picture>
+		
+		                    <div class="mobile-slider-top__slider-item-content">
+		                        <h2 class="main-title main-title--slider">
+		                            Специальные предложения
+		                        </h2>
+		                        <p>на строительные материалы и товары для ремонта</p>
+		                        <button class="btn btn--slider">Подробнее</button>
+		                    </div>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="mobile-slider-top__btns">
+		
+		                <button id="sliderPrevMobTop" class="slider__arr slider-arr-left">
+		                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <g class="slider__arr-svg">
+		                            <path d="M19 12H5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		                            <path d="M12 5L5 12L12 19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		                        </g>
+		                    </svg>					
+		                </button>
+		            
+		                <button id="sliderNextMobTop" class="slider__arr slider-arr-right">
+		                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <g class="slider__arr-svg">
+		                            <path d="M5 12H19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		                            <path d="M12 5L19 12L12 19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		                        </g>
+		                    </svg>					
+		                </button>
+		
+		            </div>
+		
+		        </div>
+		    </div>
+		</section>
+
+		<!-- //MobileTopSLider -->
+
+		<!-- Stock -->
+
+		<div class="stock">
+		    <div class="container">
+		        <div class="stock__wrapper">
+		
+		            <div class="stock__heading">
+		                <h2 class="main-title">Акции</h2>
+		                <a href="#!" class="btn-all-xs">Все акции</a>
+		            </div>
+		
+		            <div class="cards cards--stock">
+		
+		                <div class="stock__item">
+		                    <img src="./img/stock/rkp350-ty.png" alt="Рубероид РКП-350">
+		
+		                    <div class="stock__item-content">
+		                        <h3>Рубероид РКП-350 ТУ, размер материала 1 х 10 м (10м2, 1 рулон)</h3>
+		                        <span>449 ₽</span>
+		                        <span class="old-price">499 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="stock__item">
+		                    <img src="./img/stock/master-65.png" alt="Пена монтажная ТЕХНОНИКОЛЬ MASTER 65">
+		
+		                    <div class="stock__item-content">
+		                        <h3>Пена монтажная ТЕХНОНИКОЛЬ MASTER 65 профессиональная всесезонная</h3>
+		                        <span>495 ₽</span>
+		                        <span class="old-price">660 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="stock__item">
+		                    <img src="./img/stock/rabitz.png" alt="Сетка Рабица">
+		
+		                    <div class="stock__item-content">
+		                        <h3>Сетка "Рабица" яч. 50х50/1,5х10 м-ОЦ</h3>
+		                        <span>1 499 ₽</span>
+		                        <span class="old-price">1 890 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="stock__item">
+		                    <img src="./img/stock/metallic.png" alt="Металлочерепица">
+		
+		                    <div class="stock__item-content">
+		                        <h3>Металлочерепица, цвет коричневый, 1.18 х 1.15 м</h3>
+		                        <span>769 ₽</span>
+		                        <span class="old-price">999 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		            </div>
+		
+		            <a href="#!" class="btn-all">Все акции</a>
+		
+		        </div>
+		
+		        <div class="stock-slider-wrapper">
+		
+		            <div id="stockSlider" class="stock-slider owl-carousel owl-theme">
+		    
+		                <div class="stock__item">
+		                    <img src="./img/stock/rkp350-ty.png" alt="Рубероид РКП-350">
+		    
+		                    <div class="stock__item-content">
+		                        <h3>Рубероид РКП-350 ТУ, размер материала 1 х 10 м (10м2, 1 рулон)</h3>
+		                        <span>449 ₽</span>
+		                        <span class="old-price">499 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		    
+		                <div class="stock__item">
+		                    <img src="./img/stock/master-65.png" alt="Пена монтажная ТЕХНОНИКОЛЬ MASTER 65">
+		    
+		                    <div class="stock__item-content">
+		                        <h3>Пена монтажная ТЕХНОНИКОЛЬ MASTER 65 профессиональная всесезонная</h3>
+		                        <span>495 ₽</span>
+		                        <span class="old-price">660 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		    
+		                <div class="stock__item">
+		                    <img src="./img/stock/rabitz.png" alt="Сетка Рабица">
+		    
+		                    <div class="stock__item-content">
+		                        <h3>Сетка "Рабица" яч. 50х50/1,5х10 м-ОЦ</h3>
+		                        <span>1 499 ₽</span>
+		                        <span class="old-price">1 890 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		    
+		                <div class="stock__item">
+		                    <img src="./img/stock/metallic.png" alt="Металлочерепица">
+		    
+		                    <div class="stock__item-content">
+		                        <h3>Металлочерепица, цвет коричневый, 1.18 х 1.15 м</h3>
+		                        <span>769 ₽</span>
+		                        <span class="old-price">999 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		    
+		            </div>
+		    
+		        </div>
+		
+		    </div>
+		</div>
+
+		<!-- //Stock -->
+
+		<!-- Popular -->
+
+		<div class="popular">
+		    <div class="container">
+		        <div class="popular__wrapper">
+		
+		            <div class="popular__heading">
+		                <h2 class="main-title">Популярные категории</h2>
+		                <a href="#!" class="btn-all-xs">Все категории</a>
+		            </div>
+		
+		            <div class="cards">
+		                
+		                <a href="#!" class="popular__item">
+		                    <h3>Душевые</h3>
+		                    <img src="./img/popular/shower.png" alt="Душевые">
+		                </a>
+		
+		                <a href="#!" class="popular__item">
+		                    <h3>Пиломатериалы</h3>
+		                    <img src="./img/popular/wood.png" alt="Пиломатериалы">
+		                </a>
+		
+		                <a href="#!" class="popular__item">
+		                    <h3>Линолеум</h3>
+		                    <img src="./img/popular/floor.png" alt="Линолеум">
+		                </a>
+		
+		                <a href="#!" class="popular__item">
+		                    <h3>Обои</h3>
+		                    <img src="./img/popular/wallpapers.png" alt="Обои">
+		                </a>
+		
+		                <a href="#!" class="popular__item">
+		                    <h3>Инструменты</h3>
+		                    <img src="./img/popular/instruments.png" alt="Инструменты">
+		                </a>
+		
+		                <a href="#!" class="popular__item">
+		                    <h3>Товары для дачи</h3>
+		                    <img src="./img/popular/dacha.png" alt="Товары для дачи">
+		                </a>
+		
+		                <a href="#!" class="popular__item">
+		                    <h3>Окна</h3>
+		                    <img src="./img/popular/window.png" alt="Окна">
+		                </a>
+		
+		                <a href="#!" class="popular__item">
+		                    <h3>Двери</h3>
+		                    <img src="./img/popular/doors.png" alt="Двери">
+		                </a>
+		
+		                <a href="#!" class="popular__item popular__item--xs">
+		                    <h3>Сантехника</h3>
+		                    <img src="./img/popular/santechnics.png" alt="Сантехника">
+		                </a>
+		
+		                <a href="#!" class="popular__item popular__item--xs">
+		                    <h3>Краски</h3>
+		                    <img src="./img/popular/paints.png" alt="Краски">
+		                </a>
+		
+		                <a href="#!" class="popular__item popular__item--xs">
+		                    <h3>Электротовары</h3>
+		                    <img src="./img/popular/electrics.png" alt="Электротовары">
+		                </a>
+		                
+		                <a href="#!" class="popular__item popular__item--xs">
+		                    <h3>Интерьер</h3>
+		                    <img src="./img/popular/interier.png" alt="Интерьер">
+		                </a>
+		
+		            </div>
+		
+		            <a href="#!" class="btn-all">Все категории</a>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- Popular -->
+
+		<!-- Goods -->
+
+		<div class="goods">
+		    <div class="container">
+		        <div class="goods__wrapper">
+		
+		            <div class="goods__heading">
+		                <h2 class="main-title">Популярные товары</h2>
+		            </div>
+		
+		            <div class="cards">
+		
+		                <div class="goods__item">
+		                    <img src="./img/goods/c-ya4m112d.png" alt="Керамогранит">
+		
+		                    <div class="goods__item-content">
+		                        <h3>Керамогранит Yasmin 598х185 коричневый C-YA4M112D</h3>
+		                        <span>899 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="goods__item">
+		                    <img src="./img/goods/ceresitce-33.png" alt="Затирка">
+		                    
+		                    <div class="goods__item-content">
+		                        <h3>Затирка для узких швов Ceresit СЕ 33, цвет белый, 2 кг</h3>
+		                        <span>275 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="goods__item">
+		                    <img src="./img/goods/starteli.png" alt="Грунтовка">
+		                    
+		                    <div class="goods__item-content">
+		                        <h3>Грунтовка Старатели 10л глубокого проникновения</h3>
+		                        <span>839 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="goods__item">
+		                    <img src="./img/goods/volma.png" alt="Гипсокартон">
+		                    
+		                    <div class="goods__item-content">
+		                        <h3>Гипсокартон Волма, 2500 х 1200 х 12,5 мм</h3>
+		                        <span>335 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="goods__item">
+		                    <img src="./img/goods/profile.png" alt="Профиль">
+		                    
+		                    <div class="goods__item-content">
+		                        <h3>Профиль 0,55мм для гипсокартона</h3>
+		                        <span>195 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="goods__item">
+		                    <img src="./img/goods/roulete.png" alt="Рулетка">
+		                    
+		                    <div class="goods__item-content">
+		                        <h3>Рулетка 3м</h3>
+		                        <span>135 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="goods__item">
+		                    <img src="./img/goods/knauf.png" alt="Кнауф">
+		                    
+		                    <div class="goods__item-content">
+		                        <h3>Кнауф Мп 75 штукатурка гипсовая МН 30кг</h3>
+		                        <span>380 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="goods__item">
+		                    <img src="./img/goods/d110-gr90.png" alt="Кнауф">
+		                    
+		                    <div class="goods__item-content">
+		                        <h3>Уголок серый канализационный Д110 ГР90</h3>
+		                        <span>335 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="goods__item">
+		                    <img src="./img/goods/rotband.png" alt="Ротбанд">
+		                    
+		                    <div class="goods__item-content">
+		                        <h3>Knauf Ротбанд, 30 кг</h3>
+		                        <span>508 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="goods__item">
+		                    <img src="./img/goods/metall.png" alt="Саморез">
+		                    
+		                    <div class="goods__item-content">
+		                        <h3>Саморез по металлу 3,5х25 мм для гипсокартона</h3>
+		                        <span>340 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="goods__item">
+		                    <img src="./img/goods/danogips.png" alt="Шпатлевка">
+		                    
+		                    <div class="goods__item-content">
+		                        <h3>Шпатлевка универсальная Danogips SuperFinish 17 л</h3>
+		                        <span>2 555 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		                <div class="goods__item">
+		                    <img src="./img/goods/duck-tape.png" alt="Клейкая лента">
+		                    
+		                    <div class="goods__item-content">
+		                        <h3>Клейкая лента металлизированная Изоспан FL 5х5000 см</h3>
+		                        <span>226 ₽</span>
+		                        <button class="btn">
+		                            В корзину
+		                        </button>
+		                    </div>
+		                </div>
+		
+		            </div>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- Goods -->
+
+		<!-- Brands -->
+
+		<div class="brands">
+		    <div class="container">
+		        <div class="brands__wrapper">
+		
+		            <div class="brands__heading">
+		                <h2 class="main-title">Популярные бренды</h2>
+		            </div>
+		
+		            <div class="cards cards--brands">
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/bever.png" alt="Bever" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/braer.png" alt="Braer" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/leonardo.png" alt="Leonardo Stone" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/euroblock.png" alt="EuroBlock" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/perfekta.png" alt="Perfekta" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/mstera.png" alt="Mstera" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/lsr.png" alt="Lsr" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/galen.png" alt="Galen" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/recke.png" alt="Recke" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/modformat.png" alt="ModFormat" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/decra.png" alt="Decra" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/engels-baksteen.png" alt="Engels Baksteen" width="100" height="66">
+		                </div>
+		
+		            </div>
+		
+		            <a href="#!" class="btn-all">Все бренды</a>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- Brands -->
+
+		<!-- Reviews -->
+
+		<div class="reviews">
+		    
+		    <div class="container">
+		        <div class="reviews__heading">
+		            <h2 class="main-title">Отзывы</h2>
+		        </div>
+		    </div>
+		
+		    <div id="mobile-slider-bottom" class="reviews-slider owl-carousel owl-theme">
+		
+		        <div class="reviews-slide">
+		            <div class="reviews-slide__heading">
+		                <div class="reviews-slide__heading-img">
+		                    <img src="./img/reviews/avatar1.png" alt="Пётр">
+		                </div>
+		                <p>Пётр</p>
+		            </div>
+		            <div class="reviews-slide__content">
+		                <p>
+		                    Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё хорошо объяснил, показал и плюс остался бонус в ящике перфоратора это бур нужного мне диаметра, оставленным прежним арендатором. В общем повесил телевизор, где надо было просверлить 4 отверстия, всего за 100 ₽
+		                </p>
+		            </div>
+		            <div class="reviews-slide__footer">
+		                <span>21 марта 2022 г.</span>
+		            </div>
+		        </div>
+		
+		        <div class="reviews-slide">
+		            <div class="reviews-slide__heading">
+		                <div class="reviews-slide__heading-img">
+		                    <img src="./img/reviews/avatar2.png" alt="Анна">
+		                </div>
+		                <p>Анна</p>
+		            </div>
+		            <div class="reviews-slide__content">
+		                <p>
+		                    Живу в п.Володарский МО, очень были рады открытию магазина СтройкаСтор. Хорошие сотрудники, но особенно хочется отметить работу Алексея за его помощь в решении проблем, очень квалифицированные рекомендации по подбору строительных материалов для ремонта. Хороший ассортимент
+		                </p>
+		            </div>
+		            <div class="reviews-slide__footer">
+		                <span>18 марта 2022 г.</span>
+		            </div>
+		        </div>
+		
+		        <div class="reviews-slide">
+		            <div class="reviews-slide__heading">
+		                <div class="reviews-slide__heading-img">
+		                    <img src="./img/reviews/avatar3.png" alt="Виктор">
+		                </div>
+		                <p>Виктор</p>
+		            </div>
+		            <div class="reviews-slide__content">
+		                <p>
+		                    Заказывал в данном магазине строй материалы. Привезли их вовремя и в прекрасном состоянии, претензий к доставке, персоналу и прочему меня нет. Строй материалы мне понравились, ремонт с ними я сделал отличный. Магазин мне безумно понравился, обязательно обращусь сюда снова, большое спасибо
+		                </p>
+		            </div>
+		            <div class="reviews-slide__footer">
+		                <span>6 ноября 2020 г.</span>
+		            </div>
+		        </div>
+		
+		        <div class="reviews-slide">
+		            <div class="reviews-slide__heading">
+		                <div class="reviews-slide__heading-img">
+		                    <img src="./img/reviews/avatar4.png" alt="Дмитрий">
+		                </div>
+		                <p>Дмитрий</p>
+		            </div>
+		            <div class="reviews-slide__content">
+		                <p>
+		                    Данный магазин целиком и полностью оправдал все мои ожидания. Тут мне удалось найти апсалютно все нужные мне материалы для отделочных работ и в нужном количестве. С доставкой тоже получилось всё удобно. привезли всё в заказанном количестве и в отличном состоянии.
+		                </p>
+		            </div>
+		            <div class="reviews-slide__footer">
+		                <span>5 ноября 2021 г.</span>
+		            </div>
+		        </div>
+		
+		    </div>
+		    
+		    <div class="container">
+		
+		        <button id="sliderPrevMobBot" class="slider__arr slider-arr-left">
+		            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                <g class="slider__arr-svg">
+		                    <path d="M19 12H5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		                    <path d="M12 5L5 12L12 19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		                </g>
+		            </svg>					
+		        </button>
+		    
+		        <button id="sliderNextMobBot" class="slider__arr slider-arr-right">
+		            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                <g class="slider__arr-svg">
+		                    <path d="M5 12H19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		                    <path d="M12 5L19 12L12 19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		                </g>
+		            </svg>					
+		        </button>
+		
+		    </div>
+		
+		</div>
+
+		<!-- Reviews -->
+
+		<!-- About -->
+
+		<div class="about">
+		    <div class="container">
+		        <div class="about__wrapper">
+		
+		            <div class="about__heading">
+		                <h2 class="main-title">О компании</h2>
+		            </div>
+		
+		            <div class="about__content">
+		                <p>
+		                    В СтройкаСтор вы всегда можете купить все необходимые товары для ремонта домаи дачи. Хотите сделать ремонт в квартире? Строите загородный дом? Используйте строительные и отделочные материалы из нашего каталога.
+		                </p>
+		                <p>
+		                    Быстрая доставка строительных товаров по низким ценам сделает ваши покупки более приятными. Ремонт может стоить дешево, если делать его с нами. Для вас всегдав наличии более 30 000 товаров для строительства по низким ценам каждый день.
+		                    <br>
+		                    СтройкаСтор — это широкий ассортимент товаров для дома и ремонта недорого; Возможность заказать строительные и отделочные материалы для дома и дачи.
+		                </p>
+		            </div>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //About -->
+
+		<!-- Footer -->
+
+		<div class="footer">
+		    <div class="container">
+		        <div class="footer__wrapper">
+		
+		                <div class="footer-content-row">
+		                    <div class="footer-row-l-t">
+		                        <img src="./img/footer/logo.svg" alt="Logo" class="footer__logo">
+		                        <ul>
+		                            <li><a href="#!">
+		                                <img src="./img/footer/mail.svg" alt="Mail">
+		                                info@stroykastore.ru
+		                            </a></li>
+		                            <li><a href="#!">
+		                                <img src="./img/footer/location.svg" alt="Location">
+		                                Москва, ул. Камушкина 10
+		                            </a></li>
+		                        </ul>
+		                    </div>
+		                    <div class="footer-row-r-b">
+		                        <ul>
+		                            <li class="hover-link"><a href="#!">Личный кабинет</a></li>
+		                            <li class="hover-link"><a href="#!">Заказы</a></li>
+		                            <li class="hover-link"><a href="#!">Избранное</a></li>
+		                            <li class="hover-link"><a href="#!">Корзина</a></li>
+		                        </ul>
+		                        <ul>
+		                            <li class="hover-link"><a href="#!">Каталог</a></li>
+		                            <li class="hover-link"><a href="#!">Акции</a></li>
+		                            <li class="hover-link"><a href="#!">Бренды</a></li>
+		                            <li class="hover-link"><a href="#!">Контакты</a></li>
+		                        </ul>
+		                        <ul class="footer-row-b__links-xs">
+		                            <li class="hover-link"><a href="#!">Стать продавцом</a></li>
+		                            <li class="hover-link"><a href="#!">Доставка</a></li>
+		                            <li class="hover-link"><a href="#!">Возврат</a></li>
+		                            <li class="hover-link"><a href="#!">Документация</a></li>
+		                        </ul>
+		                    </div>
+		                </div>
+		
+		                <div class="footer-copyright-row">
+		                    <div class="footer__payment">
+		                        <img src="./img/footer/visa.svg" alt="Visa">
+		                        <img src="./img/footer/mastercard.svg" alt="Mastercard">
+		                        <img src="./img/footer/maestro.svg" alt="Maestro">
+		                        <img src="./img/footer/mir.svg" alt="Mir">
+		                    </div>
+		                    <p class="footer__copyright">
+		                        © СтройкаСтор
+		                    </p>
+		                    <p class="footer__madeby">
+		                        Made by <a href="https://kalinovne.ru/">kalinovne</a>
+		                    </p>
+		                </div>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //Footer -->
+
+
+		<script src="./libs/jquery-3.6.1.min.js"></script>
+		<script src="./libs/owlcarousel/owl.carousel.min.js"></script>
+		<script src="./libs/micromodal/micromodal.min.js"></script>
+		<script src="./js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,56 @@
+.mobile-menu{
+    position: absolute;
+    top: 58px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: white;
+
+    z-index: 9999;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    &__btn{
+        position: relative;
+        width: 316px;
+
+        background: white;
+        border: 1px solid #D1D1D3;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 48px;
+        text-align: center;
+
+        &:after{
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: 50%;
+            right: 30%;
+            transform: translateY(-50%);
+
+            background-image: url(./../../img/all/vector.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:hover{
+            background-color: #2F323A;
+            border: 1px solid #2F323A;
+            color: white;
+        }
+
+        &:hover.mobile-menu__btn::after{
+            background-image: url(./../../img/all/vector-w.svg);
+        }
+    }
+}

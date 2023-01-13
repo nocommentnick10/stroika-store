@@ -1,0 +1,90 @@
+.reviews-slider{
+    max-width: 1190px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reviews-slide{
+    position: relative;
+    width: 316px;
+    padding: 24px;
+
+    background-color: white;
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 24px;
+        top: 24px;
+        right: 24px;
+
+        background-image: url(./../../img/reviews/backtigs.svg);
+    }
+
+    &__heading{
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        margin-bottom: 12px;
+
+        p{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.36;
+            color: #2F323A;
+        }
+    }
+
+    &__content{
+        min-height: 240px;
+        margin-bottom: 15px;
+
+        p{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.45;
+            color: #2F323A;
+        }
+    }
+
+    &__footer{
+        span{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.45;
+            color: #8B8D92;
+        }
+    }
+}
+
+.slider__arr{
+    width: 52px;
+    height: 52px;
+
+    border: 1px solid #D1D1D3;
+    background-color: white;
+
+    &:hover{
+        background-color: #2F323A;
+        border: 1px solid #2F323A;
+        .slider__arr-svg{
+            stroke: white;
+        }
+
+    }
+
+    &-svg{
+        stroke: #454950;
+    }
+
+    svg{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.slider__arr + .slider__arr{
+    margin-left: 12px;
+}

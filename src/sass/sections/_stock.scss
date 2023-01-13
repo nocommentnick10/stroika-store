@@ -1,0 +1,125 @@
+.stock{
+    margin-bottom: 40px;
+
+    @media (min-width: 768px){
+        margin-bottom: 50px;
+    }
+
+    &__heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+}
+
+.stock__item{
+    position: relative;
+    width: 148px;
+
+    border: 1px solid #E8E9EA;
+
+    @media (min-width: 768px){
+        width: 276px;
+    }
+
+    &::after{
+        content: "-25%";
+        position: absolute;
+        width: 53px;
+        height: 28px;
+        top: 8px;
+        left: 8px;
+
+        border: 2px solid #FBE303;
+        background-color: white;
+
+        text-align: center;
+    }
+
+    img{
+        height: 110px;
+
+        border-bottom: 1px solid #E8E9EA;
+
+        @media (min-width: 768px){
+            height: 208px;
+        }
+    }
+}
+
+.stock__item-content{
+    padding: 8px;
+
+    @media (min-width: 768px){
+        padding: 16px;
+    }
+
+    h3{
+        min-height: 71px;
+        margin-bottom: 12px;
+
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.45;
+        color: #2F323A;
+
+        overflow: hidden;
+        display: -webkit-box;
+	    -webkit-line-clamp: 3;
+	    -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+
+        @media (min-width: 768px){
+            max-height: unset;
+            height: 72px;
+        }
+    }
+
+    span{
+        display: inline-block;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+.old-price{
+    position: relative;
+    margin-bottom: 8px;
+    // margin-right: 8px;
+
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 1.5;
+    color: #8B8D92;
+
+    @media (min-width: 768px){
+        margin-bottom: 16px;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        background-color: #2F323A;
+    }
+}
+
+.stock-slider-wrapper{
+    display: none;
+
+    @media (min-width: 768px){
+        display: block;
+    }
+
+    @media (min-width: 1440px){
+        display: none;
+    }
+}
+
