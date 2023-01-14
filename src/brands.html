@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Стартовый шаблон</title>
+		<meta name="description" content="Описание страницы" />
+		<meta name="keywords" content="ключевые слова, фразы" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./libs/micromodal/micromodal.css">
+		<link rel="stylesheet" href="./libs/micromodal/micromodal.theme.css">
+		<link rel="stylesheet" href="./libs/owlcarousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="./libs/owlcarousel/assets/owl.theme.default.min.css">
+
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Туристическое агентство Форест Тревел" />
+		<meta property="og:description" content="Турпоходы по дикой природе" />
+		<meta property="og:image" content="./img/opengraph.jpg"/>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf">
+		<link rel="shortcut icon" href="./img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+
+        <!-- HeaderTopMobile -->
+		<div class="header-top-mobile">
+		    <div class="container">
+		        <div class="header-top-mobile__wrapper">
+		            <button id="mobileBtn" class="header-top-mobile__btn">
+		                <!-- <img src="./img/mobile-menu/menu.svg" alt="Меню" width="40" height="40"> -->
+		                <span id="btn-mid" class="header-top-mobile__btn-mid"></span>
+		            </button>
+		            <a href="./index.html">
+		                <img src="./img/header/Logo.svg" alt="Логотип">
+		            </a>
+		            <a href="#!" class="header-top-mobile__btn">
+		                <img src="./img/mobile-menu/cart.svg" alt="Корзина" width="40" height="40">
+		            </a>
+		        </div>
+		
+		        <section id="mobileMenu" class="mobile-menu none">
+		            <!-- <div class="container"> -->
+		                <div class="mobile-menu__wrapper">
+		        
+		                    <a href="#!" class="btn btn--catalogue">
+		                        Каталог
+		                    </a>
+		        
+		                    <a href="#!" class="mobile-menu__btn">
+		                        Профиль
+		                    </a>
+		        
+		                    <a href="#!" class="mobile-menu__btn">
+		                        Заказы
+		                    </a>
+		        
+		                    <button id="locationBtn" class="location" data-micromodal-trigger="modal-1">
+		                        Москва
+		                    </button>
+		        
+		                </div>
+		            <!-- </div> -->
+		        </section>
+		    </div>
+		</div>
+        <!-- //HeaderTopMobile -->
+
+		<!-- HeaderTopTabletXS -->
+
+		<div class="header-top-xs">
+		    <!-- <div class="container"> -->
+		        <div class="header-top-xs__wrapper">
+		
+		            <div class="header-top-xs-row-t">
+		                <div class="container">
+		                    <div class="header-top-xs-row-t__wrapper">
+		                        <div class="header-top-xs-row-t__location">
+		                            <button id="locationBtnXs" class="location" data-micromodal-trigger="modal-1">
+		                                Москва
+		                            </button>
+		                        </div>
+		        
+		                        <nav class="header-top-xs-row-t__nav">
+		                            <ul>
+		                                <li><a href="#!">Доставка</a></li>
+		                                <li><a href="#!">Возврат</a></li>
+		                                <li><a href="#!">Документация</a></li>
+		                                <li><a href="#!">Контакты</a></li>
+		                            </ul>
+		                        </nav>
+		                    </div>
+		                </div>
+		            </div>
+		
+		            <div class="header-top-xs-row-b">
+		                <div class="container">
+		                    <div class="header-top-xs-row-b__wrapper">
+		
+		                        <a href="./index.html">
+		                            <img src="./img/header/Logo.svg" alt="Логотип">
+		                        </a>
+		                        <a href="#!" class="btn btn--header">Каталог</a>
+		                        <form class="search-mobile-md">
+		                            <input type="text" name="search" placeholder="Поиск">
+		                            <button type="submit"><img src="./img/header/search-icon.svg" alt="Искать"></button>
+		                        </form>
+		                        <ul>
+		                            <li><a href="#!"><img src="./img/header/profile-icon.svg" alt="Профиль">Профиль</a></li>
+		                            <li><a href="#!"><img src="./img/header/order-icon.svg" alt="Заказы">Заказы</a></li>
+		                            <li><a href="#!"><img src="./img/header/cart-icon.svg" alt="Корзина">Корзина</a></li>
+		                        </ul>
+		
+		                    </div>
+		
+		                </div>
+		            </div>
+		
+		        </div>
+		    <!-- </div> -->
+		</div>
+
+		<!-- HeaderTopTabletXS -->
+
+		<!-- MicroModal -->
+
+		<div id="modal-1" class="modal micromodal-slide" aria-hidden="true">
+		    <div tabindex="-1" data-micromodal-close class="modal__overlay">
+		
+		        <button class="modal-close" data-micromodal-close>
+		        </button>
+		
+		        <div
+		            role="dialog"
+		            aria-modal="true"
+		            class="modal__container"
+		        >
+		            
+		            <h2 class="main-title">Выберите ваш город</h2>
+		
+		            <div class="cities">
+		                <div class="cities__col">
+		                    <ul>
+		                        <li><button class="modal-btn" data-micromodal-close>Москва</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Екатеринбург</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Челябинск</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Уфа</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Воронеж</button></li>
+		                    </ul>
+		                </div>
+		                <div class="cities__col">
+		                    <ul>
+		                        <li><button class="modal-btn" data-micromodal-close>Санкт-Петербург</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Казань</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Самара</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Омск</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Пермь</button></li>
+		                    </ul>
+		                </div>
+		            </div>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //MicroModal -->
+
+		<!-- HeaderSearch -->
+
+		<section class="header-top-search">
+		    <div class="container">
+		        <div class="header-top-search__wrapper">
+		
+		            <form class="search-mobile">
+		                <input type="text" name="search" placeholder="Поиск">
+		                <button type="submit"><img src="./img/header/search-icon.svg" alt="Искать"></button>
+		            </form>
+		
+		        </div>
+		    </div>
+		</section>
+
+		<!-- //HeaderSearch -->
+
+		<!-- AllBrands -->
+
+		<div class="all-brands">
+		    <div class="container">
+		        <div class="all-brands__wrapper">
+		
+		            <div class="all-brands__inner">
+		                <!-- <img src="./img/brands-page/all-brands/slide-main.jpg" alt="Все бренды"> -->
+		
+		                <picture>
+		                    <source srcset="./img/brands-page/all-brands/slide-main-lg.jpg"
+		                            media="(min-width: 1440px)">
+		                    <source srcset="./img/brands-page/all-brands/slide-main-md.jpg"
+		                            media="(min-width: 1024px)">
+		                    <source srcset="./img/brands-page/all-brands/slide-main-xs.jpg"
+		                            media="(min-width: 768px)">
+		                            <img src="./img/brands-page/all-brands/slide-main.jpg" alt="Все бренды">
+		                </picture>
+		
+		                <div class="all-brands__content">
+		
+		                    <p>Главная → Все продавцы</p>
+		                    <h2 class="main-title--brands">Все бренды</h2>
+		
+		                </div>
+		            </div>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //AllBrands -->
+
+		<!-- PopularBrands -->
+
+		<div class="brands">
+		    <div class="container">
+		        <div class="brands__wrapper">
+		
+		            <div class="brands__heading">
+		                <h2 class="main-title">Популярные бренды</h2>
+		                <a href="./brands.html" class="btn-all-xs">Все бренды</a>
+		            </div>
+		
+		            <div class="cards cards--brands">
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/bever.png" alt="Bever" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/braer.png" alt="Braer" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/leonardo.png" alt="Leonardo Stone" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/euroblock.png" alt="EuroBlock" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/perfekta.png" alt="Perfekta" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/mstera.png" alt="Mstera" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/lsr.png" alt="Lsr" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/galen.png" alt="Galen" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/recke.png" alt="Recke" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/modformat.png" alt="ModFormat" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/decra.png" alt="Decra" width="100" height="66">
+		                </div>
+		
+		                <div class="brands__item">
+		                    <img src="./img/brands/engels-baksteen.png" alt="Engels Baksteen" width="100" height="66">
+		                </div>
+		
+		            </div>
+		
+		            <a href="./brands.html" class="btn-all">Все бренды</a>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //PopularBrands -->
+
+		<!-- BrandsFilter -->
+
+		<div class="brands-filter">
+		    <div class="container">
+		        <div class="brands-filter__wrapper">
+		
+		            <div class="brands-filter__btns">
+		
+		                <button class="brands-filter__btn brands-filter__btn--all" type="button" data-filter="all">
+		                    Все
+		                </button>
+		    
+		                <button class="brands-filter__btn" type="button" data-filter=".A">
+		                    A
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".B">
+		                    B
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".C">
+		                    C
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".D">
+		                    D
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".E">
+		                    E
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".F">
+		                    F
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".G">
+		                    G
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".H">
+		                    H
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".I">
+		                    I
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".J">
+		                    J
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".K">
+		                    K
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".L">
+		                    L
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".M">
+		                    M
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".N">
+		                    N
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".O">
+		                    O
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".P">
+		                    P
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".Q">
+		                    Q
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".R">
+		                    R
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".S">
+		                    S
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".T">
+		                    T
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".U">
+		                    U
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".V">
+		                    V
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".W">
+		                    W
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".Z">
+		                    Z
+		                </button>
+		    
+		                <button class="brands-filter__btn" type="button" data-filter=".AR">
+		                    А
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".BR">
+		                    Б
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".GR">
+		                    Г
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".DR">
+		                    Д
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".ER">
+		                    Е
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".JR">
+		                    Ж
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".ZR">
+		                    З
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".IR">
+		                    И
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".KR">
+		                    К
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".LR">
+		                    Л
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".MR">
+		                    М
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".NR">
+		                    Н
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".OR">
+		                    О
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".PR">
+		                    П
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".RR">
+		                    Р
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".SR">
+		                    С
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".TR">
+		                    Т
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".YR">
+		                    У
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".FR">
+		                    Ф
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".SHR">
+		                    Ш
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".EER">
+		                    Э
+		                </button>
+		                <button class="brands-filter__btn" type="button" data-filter=".YAR">
+		                    Я
+		                </button>
+		
+		            </div>
+		
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //BrandsFilter -->
+
+		<!-- BrandsUl -->
+
+		<div class="brands-ul">
+		    <div class="container">
+		        <div id="mix-cards" class="brands-ul__wrapper">
+		
+		            <div class="brands-ul__item mix A">
+		
+		                <div class="brands-ul__letter">
+		                    <span>A</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>ASB-Woodline</li>
+		                        <li>Alma Ceramica</li>
+		                        <li>Am.Pm</li>
+		                        <li>Appetite</li>
+		                        <li>Axima</li>
+		                        <li>AVS</li>
+		                        <li>Alvaro-Banos</li>
+		                        <li>Apecs</li>
+		                        <li>Auto Standart</li>
+		                        <li>Azario</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix B">
+		
+		                <div class="brands-ul__letter">
+		                    <span>B</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>BLB</li>
+		                        <li>BRAVAT</li>
+		                        <li>Belezza</li>
+		                        <li>Blocker</li>
+		                        <li>Bostik</li>
+		                        <li>Bussare</li>
+		                        <li>BOYSCOUT</li>
+		                        <li>Belani</li>
+		                        <li>Belinka</li>
+		                        <li>Bosch</li>
+		                        <li>Braver</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix C">
+		
+		                <div class="brands-ul__letter">
+		                    <span>C</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Cemmix</li>
+		                        <li>Ceramica Konskie</li>
+		                        <li>Ceresit</li>
+		                        <li>Ceramica Konskie</li>
+		                        <li>Ceresit</li>
+		                        <li>Ceresit</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix D">
+		
+		                <div class="brands-ul__letter">
+		                    <span>D</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>DAP</li>
+		                        <li>Damixa</li>
+		                        <li>Decoretto</li>
+		                        <li>Dora</li>
+		                        <li>Dulux</li>
+		                        <li>DARIIS</li>
+		                        <li>Deco Room</li>
+		                        <li>Docke</li>
+		                        <li>Dufa</li>
+		                        <li>Duschy</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix E">
+		
+		                <div class="brands-ul__letter">
+		                    <span>E</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>EKF</li>
+		                        <li>EUROTEX</li>
+		                        <li>Element</li>
+		                        <li>Elysium</li>
+		                        <li>Energy</li>
+		                        <li>Estima</li>
+		                        <li>ESKO</li>
+		                        <li>Egger</li>
+		                        <li>Elfe</li>
+		                        <li>Energizer</li>
+		                        <li>Erismann</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix F">
+		
+		                <div class="brands-ul__letter">
+		                    <span>F</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Fischer</li>
+		                        <li>Fora</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix G">
+		
+		                <div class="brands-ul__letter">
+		                    <span>G</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>GP BATTERIES</li>
+		                        <li>GSHOSE</li>
+		                        <li>Gayafores</li>
+		                        <li>Gimi</li>
+		                        <li>Golden Tile</li>
+		                        <li>Gracia Ceramica</li>
+		                        <li>Grohe</li>
+		                        <li>Grinda</li>
+		                        <li>GRANICOM</li>
+		                        <li>Gauss</li>
+		                        <li>Giaretti</li>
+		                        <li>GlobalTile</li>
+		                        <li>Goldman</li>
+		                        <li>Grinda</li>
+		                        <li>Gracia Ceramica</li>
+		                        <li>Grohe</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix H">
+		
+		                <div class="brands-ul__letter">
+		                    <span>H</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>HARO</li>
+		                        <li>HELP</li>
+		                        <li>Hammer</li>
+		                        <li>Home Color</li>
+		                        <li>Huter</li>
+		                        <li>HEGEL</li>
+		                        <li>HENKEL</li>
+		                        <li>Hobby</li>
+		                        <li>Husky</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix I">
+		
+		                <div class="brands-ul__letter">
+		                    <span>I</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>IEK</li>
+		                        <li>IVC</li>
+		                        <li>IKA</li>
+		                        <li>Ideal</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix J">
+		
+		                <div class="brands-ul__letter">
+		                    <span>J</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Jika</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix K">
+		
+		                <div class="brands-ul__letter">
+		                    <span>K</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>KLEO</li>
+		                        <li>Kerama Marazzi</li>
+		                        <li>Kolner</li>
+		                        <li>Kraftool</li>
+		                        <li>Kronostar</li>
+		                        <li>Karcher</li>
+		                        <li>Kiilto</li>
+		                        <li>Komar</li>
+		                        <li>Krass</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix L">
+		
+		                <div class="brands-ul__letter">
+		                    <span>L</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>LUX</li>
+		                        <li>Lasselsberger</li>
+		                        <li>Lemark</li>
+		                        <li>Leonord</li>
+		                        <li>LaFavola</li>
+		                        <li>Legrand</li>
+		                        <li>Lemax</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix M">
+		
+		                <div class="brands-ul__letter">
+		                    <span>M</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>METALTEX</li>
+		                        <li>Makel</li>
+		                        <li>Mallony</li>
+		                        <li>Marmiton</li>
+		                        <li>Matrix</li>
+		                        <li>Milardo</li>
+		                        <li>Murol</li>
+		                        <li>MONETA</li>
+		                        <li>Makita</li>
+		                        <li>Marburg</li>
+		                        <li>Marshall</li>
+		                        <li>Meiwa Gravure Co., Ltd</li>
+		                        <li>Monopole</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix N">
+		
+		                <div class="brands-ul__letter">
+		                    <span>N</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>NRAVA HOME</li>
+		                        <li>Norta</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix O">
+		
+		                <div class="brands-ul__letter">
+		                    <span>O</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>OLFA</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix P">
+		
+		                <div class="brands-ul__letter">
+		                    <span>P</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>P&P</li>
+		                        <li>PROSEPT</li>
+		                        <li>Park</li>
+		                        <li>Phibo</li>
+		                        <li>Polynor</li>
+		                        <li>PALLADIUM</li>
+		                        <li>Palisad</li>
+		                        <li>Pasabahce</li>
+		                        <li>Plast team</li>
+		                        <li>Power Cube</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix Q">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Q</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Quick-Step</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix R">
+		
+		                <div class="brands-ul__letter">
+		                    <span>R</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Rasch</li>
+		                        <li>Regent</li>
+		                        <li>Roca</li>
+		                        <li>Realistik</li>
+		                        <li>Rehau</li>
+		                        <li>Rossinka</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix S">
+		
+		                <div class="brands-ul__letter">
+		                    <span>S</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Safeline</li>
+		                        <li>Santool</li>
+		                        <li>Sheffilton</li>
+		                        <li>Stayer</li>
+		                        <li>Salag</li>
+		                        <li>Schneider Electric</li>
+		                        <li>Soudal</li>
+		                        <li>Swensa</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix T">
+		
+		                <div class="brands-ul__letter">
+		                    <span>T</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>T4P</li>
+		                        <li>Tarkett</li>
+		                        <li>Tokito</li>
+		                        <li>TRIUMPH NORD</li>
+		                        <li>Thermo</li>
+		                        <li>Toplight</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix U">
+		
+		                <div class="brands-ul__letter">
+		                    <span>U</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>UNICUM</li>
+		                        <li>Unibob</li>
+		                        <li>UNIVERSAL</li>
+		                        <li>Unicorn</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix V">
+		
+		                <div class="brands-ul__letter">
+		                    <span>V</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>VIDIMA</li>
+		                        <li>Vents</li>
+		                        <li>Vincent</li>
+		                        <li>VODA</li>
+		                        <li>Vernissage</li>
+		                        <li>Vortex</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix W">
+		
+		                <div class="brands-ul__letter">
+		                    <span>W</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>WAGO</li>
+		                        <li>Wester</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix Z">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Z</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Zalger</li>
+		                        <li>Ziber</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix AR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>А</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>АНИ</li>
+		                        <li>АСБ-Мебель</li>
+		                        <li>Авангард</li>
+		                        <li>Аист</li>
+		                        <li>Аквафор</li>
+		                        <li>Альпа</li>
+		                        <li>Алюмет</li>
+		                        <li>Арей</li>
+		                        <li>Артекс</li>
+		                        <li>Астрохим</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix BR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Б</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Банные штучки</li>
+		                        <li>Белвинил</li>
+		                        <li>Бытпласт</li>
+		                        <li>Барьер</li>
+		                        <li>Брянские обои</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix GR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Г</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Гипрофи</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix DR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Д</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Двери.ру</li>
+		                        <li>Делга</li>
+		                        <li>Джоби</li>
+		                        <li>Дверной Континент</li>
+		                        <li>Дельфа</li>
+		                        <li>ДорВуд</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix ER">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Е</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Еврокерамика</li>
+		                        <li>Едим Дома</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix JR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Ж</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Жук</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix ZR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>З</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Зеленая Аптека Садовода</li>
+		                        <li>Зубр</li>
+		                        <li>Зенит</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix IR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>И</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Индустрия</li>
+		                        <li>Итана</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix KR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>К</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Кедр</li>
+		                        <li>Колор Эксперт</li>
+		                        <li>Комарофф</li>
+		                        <li>Континент</li>
+		                        <li>Керамин</li>
+		                        <li>Колорит</li>
+		                        <li>Контакт</li>
+		                        <li>Кукморский завод Металлопосуды</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix LR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Л</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Лакра</li>
+		                        <li>Лесма</li>
+		                        <li>Лесстройпроект</li>
+		                        <li>Лукойл</li>
+		                        <li>Лесенка</li>
+		                        <li>Лесозавод</li>
+		                        <li>Луга</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix MR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>М</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Макрофлекс</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix NR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Н</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Нева Тафт</li>
+		                        <li>Нэфис</li>
+		                        <li>Нрава</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix OR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>О</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>ОКСО</li>
+		                        <li>Ондулин</li>
+		                        <li>Олимп</li>
+		                        <li>Орио</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix PR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>П</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>ПРОМЕТ</li>
+		                        <li>Пластик Репаблик</li>
+		                        <li>Полимербыт</li>
+		                        <li>Промрукав</li>
+		                        <li>Профилюкс</li>
+		                        <li>Пинотекс</li>
+		                        <li>Пластмаркет</li>
+		                        <li>Политэк</li>
+		                        <li>Профильдорс</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix RR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Р</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Ресанта</li>
+		                        <li>Рыжий кот</li>
+		                        <li>Рифар</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix SR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>С</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>СИБИН</li>
+		                        <li>Сантек</li>
+		                        <li>Сельмаш</li>
+		                        <li>СоюзБалтКомплект</li>
+		                        <li>Ставр</li>
+		                        <li>Старатели</li>
+		                        <li>Ступино</li>
+		                        <li>СТН</li>
+		                        <li>Саратовские обои</li>
+		                        <li>Сибртех</li>
+		                        <li>Спарта</li>
+		                        <li>Стальэмаль</li>
+		                        <li>Строитель</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix TR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Т</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>ТДВ</li>
+		                        <li>Твоя Планета</li>
+		                        <li>Тритон</li>
+		                        <li>ТОРН</li>
+		                        <li>Технолайн</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix YR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>У</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Уют</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix FR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Ф</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Фаско</li>
+		                        <li>Формат</li>
+		                        <li>Фертика</li>
+		                        <li>Фрекен Бок</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix SHR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Ш</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Шахтинская плитка</li>
+		                        <li>Штрих</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix EER">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Э</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>ЭКО</li>
+		                        <li>Эксперт</li>
+		                        <li>Эко НОМ</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		            <div class="brands-ul__item mix YAR">
+		
+		                <div class="brands-ul__letter">
+		                    <span>Я</span>
+		                </div>
+		
+		                <div class="brands-ul__brands">
+		
+		                    <ul>
+		                        <li>Яр краски</li>
+		                        <li>Ярославский антисептик</li>
+		                    </ul>
+		
+		                </div>
+		
+		            </div>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //BrandsUl -->
+
+		<!-- Footer -->
+
+		<div class="footer">
+		    <div class="container">
+		        <div class="footer__wrapper">
+		
+		                <div class="footer-content-row">
+		                    <div class="footer-row-l-t">
+		                        <img src="./img/footer/logo.svg" alt="Logo" class="footer__logo">
+		                        <ul>
+		                            <li><a href="#!">
+		                                <img src="./img/footer/mail.svg" alt="Mail">
+		                                info@stroykastore.ru
+		                            </a></li>
+		                            <li><a href="#!">
+		                                <img src="./img/footer/location.svg" alt="Location">
+		                                Москва, ул. Камушкина 10
+		                            </a></li>
+		                        </ul>
+		                    </div>
+		                    <div class="footer-row-r-b">
+		                        <ul>
+		                            <li class="hover-link"><a href="#!">Личный кабинет</a></li>
+		                            <li class="hover-link"><a href="#!">Заказы</a></li>
+		                            <li class="hover-link"><a href="#!">Избранное</a></li>
+		                            <li class="hover-link"><a href="#!">Корзина</a></li>
+		                        </ul>
+		                        <ul>
+		                            <li class="hover-link"><a href="#!">Каталог</a></li>
+		                            <li class="hover-link"><a href="#!">Акции</a></li>
+		                            <li class="hover-link"><a href="#!">Бренды</a></li>
+		                            <li class="hover-link"><a href="#!">Контакты</a></li>
+		                        </ul>
+		                        <ul class="footer-row-b__links-xs">
+		                            <li class="hover-link"><a href="#!">Стать продавцом</a></li>
+		                            <li class="hover-link"><a href="#!">Доставка</a></li>
+		                            <li class="hover-link"><a href="#!">Возврат</a></li>
+		                            <li class="hover-link"><a href="#!">Документация</a></li>
+		                        </ul>
+		                    </div>
+		                </div>
+		
+		                <div class="footer-copyright-row">
+		                    <div class="footer__payment">
+		                        <img src="./img/footer/visa.svg" alt="Visa">
+		                        <img src="./img/footer/mastercard.svg" alt="Mastercard">
+		                        <img src="./img/footer/maestro.svg" alt="Maestro">
+		                        <img src="./img/footer/mir.svg" alt="Mir">
+		                    </div>
+		                    <p class="footer__copyright">
+		                        © СтройкаСтор
+		                    </p>
+		                    <p class="footer__madeby">
+		                        Made by <a href="https://kalinovne.ru/">kalinovne</a>
+		                    </p>
+		                </div>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //Footer -->
+
+
+		<script src="./libs/jquery-3.6.1.min.js"></script>
+		<script src="./libs/micromodal/micromodal.min.js"></script>
+		<script src="./libs/mixitup.min.js"></script>
+		<script src="./js/brands.js"></script>
+
+	</body>
+</html>

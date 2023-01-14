@@ -1,0 +1,38 @@
+.brands-filter{
+    margin-bottom: 40px;
+
+    &__btns{
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        row-gap: 8px;
+        flex-wrap: wrap;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-width: 768px){
+            max-width: 100%;
+        }
+    }
+}
+
+.brands-filter__btn{
+    width: 34px;
+
+    border: 1px solid #D1D1D3;
+    background-color: white;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+
+    &:hover, &:focus{
+        border-color: #FBE303;
+        background-color: #FBE303;
+    }
+
+    &--all{
+        width: 60px;
+    }
+}
