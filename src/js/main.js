@@ -43,9 +43,12 @@ $(document).ready(function(){
         margin: 10,
         autoWidth: true,
         center: true,
-        dots: false,
+        autoplay: true,
+        // dots: false,
         responsive : {
-            // breakpoint from 0 up
+            768: {
+                dots: false
+            },
             1440 : {
                 autoWidth: false
             }

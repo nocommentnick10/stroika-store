@@ -1,19 +1,3 @@
-// MixItUp
-
-$('document').ready(function(){
-
-    let containerEl = document.querySelector('#mix-cards')
-
-    let mixer = mixitup(containerEl, {
-        classNames: {
-                block: ""
-        }
-    })
-
-})
-
-// MixItUp
-
 const mobileMenu = document.getElementById('mobileMenu')
 const mobileBtn = document.getElementById('mobileBtn')
 const btnMid = document.getElementById('btn-mid')
@@ -23,15 +7,6 @@ mobileBtn.addEventListener('click', () => {
     btnMid.classList.toggle('btn--active')
     document.body.classList.toggle('overflowy')
 })
-
-// Micromodal
-
-MicroModal.init({
-    disableScroll: true, // [6]
-});
-
-// Micromodal
-
 // Cities
 
 const citiesBtn = document.getElementById('locationBtn')

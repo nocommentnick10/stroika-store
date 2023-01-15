@@ -12,6 +12,7 @@
 @import "./blocks/cards";
 @import "./blocks/btn-all";
 @import "./blocks/reviews-slider";
+@import "./blocks/list-group.scss";
 
 // Sections
 
@@ -30,3 +31,6 @@
 @import "./sections/all-brands";
 @import "./sections/brands-filter";
 @import "./sections/brands-ul";
+@import "./sections/delivery-info.scss";
+@import "./sections/delivery-howto.scss";
+@import "./sections/delivery-faq.scss";

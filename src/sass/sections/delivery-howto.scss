@@ -1,0 +1,61 @@
+.delivery-howto{
+    margin-bottom: 40px;
+
+    @media (min-width: 768px){
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: 1024px){
+        margin-bottom: 60px;
+    }
+
+    &__cards{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 16px;
+
+        @media (min-width: 1024px){
+            margin-top: 32px;
+        }
+    }
+
+    &__card{
+        max-width: 148px;
+
+        @media (min-width: 768px){
+            max-width: 205px;
+        }
+
+        @media (min-width: 1440px){
+            max-width: 252px;
+        }
+
+        &:nth-child(3){
+            @media (min-width: 1440px){
+                max-width: 212px;
+            }
+        }
+
+        img{
+            margin-bottom: 12px;
+        }
+
+        p{
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 1.45;
+            color: #2F323A;
+
+            @media (min-width: 768px){
+                font-size: 15px;
+            }
+
+            @media (min-width: 1440px){
+                font-size: 16px;
+            }
+        }
+    }
+}

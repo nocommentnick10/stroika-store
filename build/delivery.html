@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Стройка Стор - Доставка</title>
+		<meta name="description" content="Доставка Стройка Стор" />
+		<meta name="keywords" content="стройка стор, stroykastore, ремонт, строительные материалы, товары для ремонта" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./libs/micromodal/micromodal.css">
+		<link rel="stylesheet" href="./libs/micromodal/micromodal.theme.css">
+		<link rel="stylesheet" href="./libs/owlcarousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="./libs/owlcarousel/assets/owl.theme.default.min.css">
+
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Строительный магазин Стройка Стор" />
+		<meta property="og:description" content="Все необходимые товары для ремонта дома и дачи" />
+		<meta property="og:image" content="./img/opengraph.jpg"/>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf">
+		<link rel="shortcut icon" href="./img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+
+        <!-- HeaderTopMobile -->
+		<div class="header-top-mobile">
+		    <div class="container">
+		        <div class="header-top-mobile__wrapper">
+		            <button id="mobileBtn" class="header-top-mobile__btn">
+		                <!-- <img src="./img/mobile-menu/menu.svg" alt="Меню" width="40" height="40"> -->
+		                <span id="btn-mid" class="header-top-mobile__btn-mid"></span>
+		            </button>
+		            <a href="./index.html">
+		                <img src="./img/header/Logo.svg" alt="Логотип">
+		            </a>
+		            <a href="#!" class="header-top-mobile__btn">
+		                <img src="./img/mobile-menu/cart.svg" alt="Корзина" width="40" height="40">
+		            </a>
+		        </div>
+		
+		        <section id="mobileMenu" class="mobile-menu none">
+		            <!-- <div class="container"> -->
+		                <div class="mobile-menu__wrapper">
+		        
+		                    <a href="#!" class="btn btn--catalogue">
+		                        Каталог
+		                    </a>
+		        
+		                    <a href="#!" class="mobile-menu__btn">
+		                        Профиль
+		                    </a>
+		        
+		                    <a href="#!" class="mobile-menu__btn">
+		                        Заказы
+		                    </a>
+		        
+		                    <button id="locationBtn" class="location" data-micromodal-trigger="modal-1">
+		                        Москва
+		                    </button>
+		        
+		                </div>
+		            <!-- </div> -->
+		        </section>
+		    </div>
+		</div>
+        <!-- //HeaderTopMobile -->
+
+		<!-- HeaderTopTabletXS -->
+
+		<div class="header-top-xs">
+		    <!-- <div class="container"> -->
+		        <div class="header-top-xs__wrapper">
+		
+		            <div class="header-top-xs-row-t">
+		                <div class="container">
+		                    <div class="header-top-xs-row-t__wrapper">
+		                        <div class="header-top-xs-row-t__location">
+		                            <button id="locationBtnXs" class="location" data-micromodal-trigger="modal-1">
+		                                Москва
+		                            </button>
+		                        </div>
+		        
+		                        <nav class="header-top-xs-row-t__nav">
+		                            <ul>
+		                                <li><a href="./delivery.html">Доставка</a></li>
+		                                <li><a href="#!">Возврат</a></li>
+		                                <li><a href="#!">Документация</a></li>
+		                                <li><a href="#!">Контакты</a></li>
+		                            </ul>
+		                        </nav>
+		                    </div>
+		                </div>
+		            </div>
+		
+		            <div class="header-top-xs-row-b">
+		                <div class="container">
+		                    <div class="header-top-xs-row-b__wrapper">
+		
+		                        <a href="./index.html">
+		                            <img src="./img/header/Logo.svg" alt="Логотип">
+		                        </a>
+		                        <a href="#!" class="btn btn--header">Каталог</a>
+		                        <form class="search-mobile-md">
+		                            <input type="text" name="search" placeholder="Поиск">
+		                            <button type="submit"><img src="./img/header/search-icon.svg" alt="Искать"></button>
+		                        </form>
+		                        <ul>
+		                            <li><a href="#!"><img src="./img/header/profile-icon.svg" alt="Профиль">Профиль</a></li>
+		                            <li><a href="#!"><img src="./img/header/order-icon.svg" alt="Заказы">Заказы</a></li>
+		                            <li><a href="#!"><img src="./img/header/cart-icon.svg" alt="Корзина">Корзина</a></li>
+		                        </ul>
+		
+		                    </div>
+		
+		                </div>
+		            </div>
+		
+		        </div>
+		    <!-- </div> -->
+		</div>
+
+		<!-- HeaderTopTabletXS -->
+
+		<!-- MicroModal -->
+
+		<div id="modal-1" class="modal micromodal-slide" aria-hidden="true">
+		    <div tabindex="-1" data-micromodal-close class="modal__overlay">
+		
+		        <button class="modal-close" data-micromodal-close>
+		        </button>
+		
+		        <div
+		            role="dialog"
+		            aria-modal="true"
+		            class="modal__container"
+		        >
+		            
+		            <h2 class="main-title">Выберите ваш город</h2>
+		
+		            <div class="cities">
+		                <div class="cities__col">
+		                    <ul>
+		                        <li><button class="modal-btn" data-micromodal-close>Москва</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Екатеринбург</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Челябинск</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Уфа</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Воронеж</button></li>
+		                    </ul>
+		                </div>
+		                <div class="cities__col">
+		                    <ul>
+		                        <li><button class="modal-btn" data-micromodal-close>Санкт-Петербург</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Казань</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Самара</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Омск</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Пермь</button></li>
+		                    </ul>
+		                </div>
+		            </div>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //MicroModal -->
+
+		<!-- HeaderSearch -->
+
+		<section class="header-top-search">
+		    <div class="container">
+		        <div class="header-top-search__wrapper">
+		
+		            <form class="search-mobile">
+		                <input type="text" name="search" placeholder="Поиск">
+		                <button type="submit"><img src="./img/header/search-icon.svg" alt="Искать"></button>
+		            </form>
+		
+		        </div>
+		    </div>
+		</section>
+
+		<!-- //HeaderSearch -->
+
+		<!-- DeliveryInfo -->
+
+        <div class="delivery-info">
+            <div class="container">
+                <div class="delivery-info__wrapper">
+                    
+                    <div class="delivery-info__inner">
+        
+                        <!-- <img src="./img/delivery-page/delivery-bg.jpg" alt="Background"> -->
+        
+                        <picture>
+                            <source srcset="./img/delivery-page/delivery-bg-lg.jpg"
+                                    media="(min-width: 1440px)">
+                            <source srcset="./img/delivery-page/delivery-bg-md.jpg"
+                                    media="(min-width: 1024px)">
+                            <source srcset="./img/delivery-page/delivery-bg-xs.jpg"
+                                    media="(min-width: 768px)">
+                                    <img src="./img/delivery-page/delivery-bg.jpg" alt="Доставка">
+                        </picture>
+        
+                        <div class="delivery-info__content">
+        
+                            <p>Главная → Доставка</p>
+                            <h2 class="main-title--brands">Доставка</h2>
+                            <p class="delivery-info__text">
+                                Доставка осуществляется курьерами поставщика или службой курьеров Достависта. Также товар можно забрать самостоятельно от поставщика
+                            </p>
+        
+                        </div>
+        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+		<!-- //DeliveryInfo -->
+
+        <!-- DeliveryHowTo -->
+
+        <div class="delivery-howto">
+            <div class="container">
+                <div class="delivery-howto__wrapper">
+        
+                    <h2 class="main-title">Как сделать заказ: 4 простых шага</h2>
+        
+                    <div class="delivery-howto__cards">
+        
+                        <div class="delivery-howto__card">
+                            <img src="./img/delivery-page/cart.svg" alt="Cart">
+                            <p>
+                                Добавьте нужные товары в корзину и оплатите заказ
+                            </p>
+                        </div>
+        
+                        <div class="delivery-howto__card">
+                            <img src="./img/delivery-page/notify.svg" alt="Notify">
+                            <p>
+                                Получите уведомления о подтверждении вашего заказа
+                            </p>
+                        </div>
+        
+                        <div class="delivery-howto__card">
+                            <img src="./img/delivery-page/map.svg" alt="Map">
+                            <p>
+                                Заберите из пунктов выдачи
+                            </p>
+                        </div>
+        
+                        <div class="delivery-howto__card">
+                            <img src="./img/delivery-page/mail.svg" alt="Mail">
+                            <p>
+                                После подтверждения мы сформируем ваш заказ
+                            </p>
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+        <!-- //DeliveryHowTo -->
+
+        <!-- DeliveryFAQ -->
+
+        <div class="delivery-faq">
+            <div class="container">
+                <div class="delivery-faq__wrapper">
+        
+                    <h2 class="main-title">Часто задаваемые вопросы</h2>
+        
+                    <div class="list-group">
+        
+                        <div class="list-group__card">
+                            <div class="list-group-item list-header" data-name="accordeon-title">
+                                <p>Водитель уведомит меня о начале доставки доставки?</p>
+                            </div>
+            
+                            <div class="list-group-item list-content">
+                                    <p>
+                                        Есть товары, которые можно купить сразу на сервисе, и товары, для покупки которых нужно перейти на сайт магазина. Условия их получения отличаются.
+                                    </p>
+            
+                                    <p>
+                                        В этом разделе описаны условия для товаров, которые можно купить. Также некоторые товары, которые продаются на Маркете, доставляются непосредственно продавцами и имеют пометку об этом. Для таких товаров могут быть доступны не все возможности, описанные ниже.
+                                    </p>
+                            </div>
+                        </div>
+        
+                        <div class="list-group__card">
+                            <div class="list-group-item list-header" data-name="accordeon-title">
+                                <p>Мне нужна помощь в разгрузке товара (дополнительная услуга), что делать?</p>
+                            </div>
+            
+                            <div class="list-group-item list-content">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ut eos perferendis placeat soluta inventore, delectus quod ducimus, quae facere officiis error, nemo laudantium quos itaque sapiente similique iste autem!
+                                    </p>
+            
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et reiciendis rem soluta officiis ratione velit itaque libero dicta, eaque, ut architecto, consectetur molestias aperiam? Veniam voluptates voluptatum possimus! Vel, facilis?
+                                    </p>
+                            </div>
+                        </div>
+        
+                        <div class="list-group__card">
+                            <div class="list-group-item list-header" data-name="accordeon-title">
+                                <p>Заказ доставили, что то от меня требуется?</p>
+                            </div>
+            
+                            <div class="list-group-item list-content">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ut eos perferendis placeat soluta inventore, delectus quod ducimus, quae facere officiis error, nemo laudantium quos itaque sapiente similique iste autem!
+                                    </p>
+            
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et reiciendis rem soluta officiis ratione velit itaque libero dicta, eaque, ut architecto, consectetur molestias aperiam? Veniam voluptates voluptatum possimus! Vel, facilis?
+                                    </p>
+                            </div>
+                        </div>
+        
+                        <div class="list-group__card">
+                            <div class="list-group-item list-header" data-name="accordeon-title">
+                                <p>Что делать если товар не тот, или ненадлежащего качества?</p>
+                            </div>
+            
+                            <div class="list-group-item list-content">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ut eos perferendis placeat soluta inventore, delectus quod ducimus, quae facere officiis error, nemo laudantium quos itaque sapiente similique iste autem!
+                                    </p>
+            
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et reiciendis rem soluta officiis ratione velit itaque libero dicta, eaque, ut architecto, consectetur molestias aperiam? Veniam voluptates voluptatum possimus! Vel, facilis?
+                                    </p>
+                            </div>
+                        </div>
+        
+                        <div class="list-group__card">
+                            <div class="list-group-item list-header" data-name="accordeon-title">
+                                <p>У меня крупный заказ (5 и более тонн груза), у вас есть доставка и разгрузка манипулятором?</p>
+                            </div>
+            
+                            <div class="list-group-item list-content">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ut eos perferendis placeat soluta inventore, delectus quod ducimus, quae facere officiis error, nemo laudantium quos itaque sapiente similique iste autem!
+                                    </p>
+            
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et reiciendis rem soluta officiis ratione velit itaque libero dicta, eaque, ut architecto, consectetur molestias aperiam? Veniam voluptates voluptatum possimus! Vel, facilis?
+                                    </p>
+                            </div>
+                        </div>
+        
+                        <div class="list-group__card">
+                            <div class="list-group-item list-header" data-name="accordeon-title">
+                                <p>Сколько времени дается на самостоятельную разгрузку товара?</p>
+                            </div>
+            
+                            <div class="list-group-item list-content">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ut eos perferendis placeat soluta inventore, delectus quod ducimus, quae facere officiis error, nemo laudantium quos itaque sapiente similique iste autem!
+                                    </p>
+            
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et reiciendis rem soluta officiis ratione velit itaque libero dicta, eaque, ut architecto, consectetur molestias aperiam? Veniam voluptates voluptatum possimus! Vel, facilis?
+                                    </p>
+                            </div>
+                        </div>
+        
+                        <div class="list-group__card">
+                            <div class="list-group-item list-header" data-name="accordeon-title">
+                                <p>Ваша доставка опоздала, как можно помочь вам улучшить свой уровень сервиса?</p>
+                            </div>
+            
+                            <div class="list-group-item list-content">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ut eos perferendis placeat soluta inventore, delectus quod ducimus, quae facere officiis error, nemo laudantium quos itaque sapiente similique iste autem!
+                                    </p>
+            
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et reiciendis rem soluta officiis ratione velit itaque libero dicta, eaque, ut architecto, consectetur molestias aperiam? Veniam voluptates voluptatum possimus! Vel, facilis?
+                                    </p>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+        <!-- //DeliveryFAQ -->
+
+		<!-- Footer -->
+
+		<div class="footer">
+		    <div class="container">
+		        <div class="footer__wrapper">
+		
+		                <div class="footer-content-row">
+		                    <div class="footer-row-l-t">
+		                        <img src="./img/footer/logo.svg" alt="Logo" class="footer__logo">
+		                        <ul>
+		                            <li><a href="#!">
+		                                <img src="./img/footer/mail.svg" alt="Mail">
+		                                info@stroykastore.ru
+		                            </a></li>
+		                            <li><a href="#!">
+		                                <img src="./img/footer/location.svg" alt="Location">
+		                                Москва, ул. Камушкина 10
+		                            </a></li>
+		                        </ul>
+		                    </div>
+		                    <div class="footer-row-r-b">
+		                        <ul>
+		                            <li class="hover-link"><a href="#!">Личный кабинет</a></li>
+		                            <li class="hover-link"><a href="#!">Заказы</a></li>
+		                            <li class="hover-link"><a href="#!">Избранное</a></li>
+		                            <li class="hover-link"><a href="#!">Корзина</a></li>
+		                        </ul>
+		                        <ul>
+		                            <li class="hover-link"><a href="#!">Каталог</a></li>
+		                            <li class="hover-link"><a href="#!">Акции</a></li>
+		                            <li class="hover-link"><a href="#!">Бренды</a></li>
+		                            <li class="hover-link"><a href="#!">Контакты</a></li>
+		                        </ul>
+		                        <ul class="footer-row-b__links-xs">
+		                            <li class="hover-link"><a href="#!">Стать продавцом</a></li>
+		                            <li class="hover-link"><a href="#!">Доставка</a></li>
+		                            <li class="hover-link"><a href="#!">Возврат</a></li>
+		                            <li class="hover-link"><a href="#!">Документация</a></li>
+		                        </ul>
+		                    </div>
+		                </div>
+		
+		                <div class="footer-copyright-row">
+		                    <div class="footer__payment">
+		                        <img src="./img/footer/visa.svg" alt="Visa">
+		                        <img src="./img/footer/mastercard.svg" alt="Mastercard">
+		                        <img src="./img/footer/maestro.svg" alt="Maestro">
+		                        <img src="./img/footer/mir.svg" alt="Mir">
+		                    </div>
+		                    <p class="footer__copyright">
+		                        © СтройкаСтор
+		                    </p>
+		                    <p class="footer__madeby">
+		                        Made by <a href="https://kalinovne.ru/">kalinovne</a>
+		                    </p>
+		                </div>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //Footer -->
+
+
+		<script src="./libs/jquery-3.6.1.min.js"></script>
+		<script src="./libs/micromodal/micromodal.min.js"></script>
+		<script src="./libs/mixitup.min.js"></script>
+		<script src="./js/micromodal.js"></script>
+        <script src="./js/accordeon.js"></script>
+        <script src="./js/menu.js"></script>
+
+	</body>
+</html>
