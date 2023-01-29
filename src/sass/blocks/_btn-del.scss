@@ -1,0 +1,25 @@
+.btn-del{
+    position: relative;
+    display: block;
+    width: 132px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid #D1D1D3;
+
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
+
+    @media (min-width: 768px){
+        width: 246px;
+    }
+
+    &:hover{
+        background-color: #2F323A;
+        border: 1px solid #2F323A;
+        color: white;
+    }
+}

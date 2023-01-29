@@ -33,4 +33,17 @@
             font-size: 48px;
         }
     }
+
+    &--contacts{
+        font-size: 26px;
+
+        @media (min-width: 768px){
+            font-size: 34px;
+        }
+
+        @media (min-width: 1024px){
+            font-weight: 700;
+            font-size: 48px;
+        }
+    }
 }

@@ -1,0 +1,48 @@
+.refund-content{
+    margin-bottom: 40px;
+}
+
+.refund-article{
+    padding: 0px 22px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 1024px){
+        display: flex;
+        align-items: flex-start;
+        column-gap: 16px;
+    }
+
+    &__heading{
+        @media (min-width: 1024px){
+            min-width: 278px;
+        }
+        
+        @media (min-width: 1440px){
+            min-width: 376px;
+        }
+    }
+
+    &+&{
+        margin-top: 40px;
+    }
+
+    h2{
+        margin-bottom: 16px;
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.45;
+        color: #2F323A;
+
+        @media (min-width: 768px){
+            font-size: 16px;
+        }
+    }
+
+    p+p{
+        margin-top: 19px;
+    }
+}

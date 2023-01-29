@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Стройка Стор - Документация</title>
+		<meta name="description" content="В СтройкаСтор вы всегда можете купить все необходимые товары для ремонта домаи дачи." />
+		<meta name="keywords" content="стройка стор, stroykastore, ремонт, строительные материалы, товары для ремонта" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./libs/micromodal/micromodal.css">
+		<link rel="stylesheet" href="./libs/micromodal/micromodal.theme.css">
+		<link rel="stylesheet" href="./libs/owlcarousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="./libs/owlcarousel/assets/owl.theme.default.min.css">
+
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Строительный магазин Стройка Стор" />
+		<meta property="og:description" content="Все необходимые товары для ремонта дома и дачи" />
+		<meta property="og:image" content="./img/opengraph.jpg"/>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf">
+		<link rel="shortcut icon" href="./img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+
+        <!-- HeaderTopMobile -->
+		<div class="header-top-mobile">
+		    <div class="container">
+		        <div class="header-top-mobile__wrapper">
+		            <button id="mobileBtn" class="header-top-mobile__btn">
+		                <!-- <img src="./img/mobile-menu/menu.svg" alt="Меню" width="40" height="40"> -->
+		                <span id="btn-mid" class="header-top-mobile__btn-mid"></span>
+		            </button>
+		            <a href="./index.html">
+		                <img src="./img/header/Logo.svg" alt="Логотип">
+		            </a>
+		            <a href="#!" class="header-top-mobile__btn">
+		                <img src="./img/mobile-menu/cart.svg" alt="Корзина" width="40" height="40">
+		            </a>
+		        </div>
+		
+		        <section id="mobileMenu" class="mobile-menu none">
+		            <!-- <div class="container"> -->
+		                <div class="mobile-menu__wrapper">
+		        
+		                    <a href="#!" class="btn btn--catalogue">
+		                        Каталог
+		                    </a>
+		        
+		                    <a href="#!" class="mobile-menu__btn">
+		                        Профиль
+		                    </a>
+		        
+		                    <a href="#!" class="mobile-menu__btn">
+		                        Заказы
+		                    </a>
+		        
+		                    <button id="locationBtn" class="location" data-micromodal-trigger="modal-1">
+		                        Москва
+		                    </button>
+		        
+		                </div>
+		            <!-- </div> -->
+		        </section>
+		    </div>
+		</div>
+        <!-- //HeaderTopMobile -->
+
+		<!-- HeaderTopTabletXS -->
+
+		<div class="header-top-xs">
+		    <!-- <div class="container"> -->
+		        <div class="header-top-xs__wrapper">
+		
+		            <div class="header-top-xs-row-t">
+		                <div class="container">
+		                    <div class="header-top-xs-row-t__wrapper">
+		                        <div class="header-top-xs-row-t__location">
+		                            <button id="locationBtnXs" class="location" data-micromodal-trigger="modal-1">
+		                                Москва
+		                            </button>
+		                        </div>
+		        
+		                        <nav class="header-top-xs-row-t__nav">
+		                            <ul>
+		                                <li><a href="./delivery.html">Доставка</a></li>
+		                                <li><a href="./refund.html">Возврат</a></li>
+		                                <li><a href="./docs.html">Документация</a></li>
+		                                <li><a href="./contacts.html">Контакты</a></li>
+		                            </ul>
+		                        </nav>
+		                    </div>
+		                </div>
+		            </div>
+		
+		            <div class="header-top-xs-row-b">
+		                <div class="container">
+		                    <div class="header-top-xs-row-b__wrapper">
+		
+		                        <a href="./index.html">
+		                            <img src="./img/header/Logo.svg" alt="Логотип">
+		                        </a>
+		                        <a href="#!" class="btn btn--header">Каталог</a>
+		                        <form class="search-mobile-md">
+		                            <input type="text" name="search" placeholder="Поиск">
+		                            <button type="submit"><img src="./img/header/search-icon.svg" alt="Искать"></button>
+		                        </form>
+		                        <ul>
+		                            <li><a href="#!"><img src="./img/header/profile-icon.svg" alt="Профиль">Профиль</a></li>
+		                            <li><a href="#!"><img src="./img/header/order-icon.svg" alt="Заказы">Заказы</a></li>
+		                            <li><a href="./cart.html"><img src="./img/header/cart-icon.svg" alt="Корзина">Корзина</a></li>
+		                        </ul>
+		
+		                    </div>
+		
+		                </div>
+		            </div>
+		
+		        </div>
+		    <!-- </div> -->
+		</div>
+
+		<!-- HeaderTopTabletXS -->
+
+		<!-- MicroModal -->
+
+		<div id="modal-1" class="modal micromodal-slide" aria-hidden="true">
+		    <div tabindex="-1" data-micromodal-close class="modal__overlay">
+		
+		        <button class="modal-close" data-micromodal-close>
+		        </button>
+		
+		        <div
+		            role="dialog"
+		            aria-modal="true"
+		            class="modal__container"
+		        >
+		            
+		            <h2 class="main-title">Выберите ваш город</h2>
+		
+		            <div class="cities">
+		                <div class="cities__col">
+		                    <ul>
+		                        <li><button class="modal-btn" data-micromodal-close>Москва</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Екатеринбург</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Челябинск</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Уфа</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Воронеж</button></li>
+		                    </ul>
+		                </div>
+		                <div class="cities__col">
+		                    <ul>
+		                        <li><button class="modal-btn" data-micromodal-close>Санкт-Петербург</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Казань</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Самара</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Омск</button></li>
+		                        <li><button class="modal-btn" data-micromodal-close>Пермь</button></li>
+		                    </ul>
+		                </div>
+		            </div>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //MicroModal -->
+
+		<!-- HeaderSearch -->
+
+		<section class="header-top-search">
+		    <div class="container">
+		        <div class="header-top-search__wrapper">
+		
+		            <form class="search-mobile">
+		                <input type="text" name="search" placeholder="Поиск">
+		                <button type="submit"><img src="./img/header/search-icon.svg" alt="Искать"></button>
+		            </form>
+		
+		        </div>
+		    </div>
+		</section>
+
+		<!-- //HeaderSearch -->
+
+		<!-- DocsMain -->
+		
+		<div class="docs-main">
+		    <div class="container">
+		        <div class="docs-main__wrapper">
+		
+		            <div class="docs-main__heading">
+		                <p>Главная → Документация</p>
+		                <h2 class="main-title">
+		                    Документация
+		                </h2>
+		            </div>
+		
+		            <div class="docs-main__content">
+		
+		                <div class="docs-main__card">
+		
+		                    <h3 class="docs-main__card-heading">
+		                        Оферта «Безопасная сделка»
+		                    </h3>
+		
+		                    <div class="docs-main__card-content">
+		
+		                        <p class="docs-main__card-content-heading">Оферта «Безопасная сделка»</p>
+		                        <p>PDF · 10 МБ</p>
+		                        <button class="btn">Скачать</button>
+		
+		                    </div>
+		
+		                </div>
+		
+		                <div class="docs-main__card">
+		
+		                    <h3 class="docs-main__card-heading">
+		                        Оферта «Безопасная сделка»
+		                    </h3>
+		
+		                    <div class="docs-main__card-content">
+		
+		                        <p class="docs-main__card-content-heading">Оферта «Безопасная сделка»</p>
+		                        <p>PDF · 10 МБ</p>
+		                        <button class="btn">Скачать</button>
+		
+		                    </div>
+		
+		                </div>
+		
+		                <div class="docs-main__card">
+		
+		                    <h3 class="docs-main__card-heading">
+		                        Оферта «Безопасная сделка»
+		                    </h3>
+		
+		                    <div class="docs-main__card-content">
+		
+		                        <p class="docs-main__card-content-heading">Оферта «Безопасная сделка»</p>
+		                        <p>PDF · 10 МБ</p>
+		                        <button class="btn">Скачать</button>
+		
+		                    </div>
+		
+		                </div>
+		
+		                <div class="docs-main__card">
+		
+		                    <h3 class="docs-main__card-heading">
+		                        Оферта «Безопасная сделка»
+		                    </h3>
+		
+		                    <div class="docs-main__card-content">
+		
+		                        <p class="docs-main__card-content-heading">Оферта «Безопасная сделка»</p>
+		                        <p>PDF · 10 МБ</p>
+		                        <button class="btn">Скачать</button>
+		
+		                    </div>
+		
+		                </div>
+		
+		                <div class="docs-main__card">
+		
+		                    <h3 class="docs-main__card-heading">
+		                        Оферта «Безопасная сделка»
+		                    </h3>
+		
+		                    <div class="docs-main__card-content">
+		
+		                        <p class="docs-main__card-content-heading">Оферта «Безопасная сделка»</p>
+		                        <p>PDF · 10 МБ</p>
+		                        <button class="btn">Скачать</button>
+		
+		                    </div>
+		
+		                </div>
+		
+		                <div class="docs-main__card">
+		
+		                    <h3 class="docs-main__card-heading">
+		                        Оферта «Безопасная сделка»
+		                    </h3>
+		
+		                    <div class="docs-main__card-content">
+		
+		                        <p class="docs-main__card-content-heading">Оферта «Безопасная сделка»</p>
+		                        <p>PDF · 10 МБ</p>
+		                        <button class="btn">Скачать</button>
+		
+		                    </div>
+		
+		                </div>
+		
+		            </div>
+		            
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //DocsMain -->
+
+		<!-- Footer -->
+
+		<div class="footer">
+		    <div class="container">
+		        <div class="footer__wrapper">
+		
+		                <div class="footer-content-row">
+		                    <div class="footer-row-l-t">
+		                        <img src="./img/footer/logo.svg" alt="Logo" class="footer__logo">
+		                        <ul>
+		                            <li><a href="#!">
+		                                <img src="./img/footer/mail.svg" alt="Mail">
+		                                info@stroykastore.ru
+		                            </a></li>
+		                            <li><a href="#!">
+		                                <img src="./img/footer/location.svg" alt="Location">
+		                                Москва, ул. Камушкина 10
+		                            </a></li>
+		                        </ul>
+		                    </div>
+		                    <div class="footer-row-r-b">
+		                        <ul>
+		                            <li class="hover-link"><a href="#!">Личный кабинет</a></li>
+		                            <li class="hover-link"><a href="#!">Заказы</a></li>
+		                            <li class="hover-link"><a href="#!">Избранное</a></li>
+		                            <li class="hover-link"><a href="#!">Корзина</a></li>
+		                        </ul>
+		                        <ul>
+		                            <li class="hover-link"><a href="#!">Каталог</a></li>
+		                            <li class="hover-link"><a href="#!">Акции</a></li>
+		                            <li class="hover-link"><a href="#!">Бренды</a></li>
+		                            <li class="hover-link"><a href="#!">Контакты</a></li>
+		                        </ul>
+		                        <ul class="footer-row-b__links-xs">
+		                            <li class="hover-link"><a href="#!">Стать продавцом</a></li>
+		                            <li class="hover-link"><a href="#!">Доставка</a></li>
+		                            <li class="hover-link"><a href="#!">Возврат</a></li>
+		                            <li class="hover-link"><a href="#!">Документация</a></li>
+		                        </ul>
+		                    </div>
+		                </div>
+		
+		                <div class="footer-copyright-row">
+		                    <div class="footer__payment">
+		                        <img src="./img/footer/visa.svg" alt="Visa">
+		                        <img src="./img/footer/mastercard.svg" alt="Mastercard">
+		                        <img src="./img/footer/maestro.svg" alt="Maestro">
+		                        <img src="./img/footer/mir.svg" alt="Mir">
+		                    </div>
+		                    <p class="footer__copyright">
+		                        © СтройкаСтор
+		                    </p>
+		                    <p class="footer__madeby">
+		                        Made by <a href="https://kalinovne.ru/">kalinovne</a>
+		                    </p>
+		                </div>
+		
+		        </div>
+		    </div>
+		</div>
+
+		<!-- //Footer -->
+
+
+		<script src="./libs/jquery-3.6.1.min.js"></script>
+		<script src="./libs/micromodal/micromodal.min.js"></script>
+		<script src="./libs/mixitup.min.js"></script>
+		<script src="./js/micromodal.js"></script>
+        <script src="./js/menu.js"></script>
+
+	</body>
+</html>

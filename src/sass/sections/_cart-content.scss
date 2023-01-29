@@ -1,0 +1,9 @@
+.cart-content{
+    margin-bottom: 40px;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}

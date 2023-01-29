@@ -50,7 +50,8 @@ $(document).ready(function(){
                 dots: false
             },
             1440 : {
-                autoWidth: false
+                autoWidth: false,
+                dots: false
             }
         }
     });

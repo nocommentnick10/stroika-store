@@ -1,0 +1,26 @@
+{
+    "stock-1" : {
+        "name": "Рубероид РКП-350 ТУ, размер материала 1 х 10 м (10м2, 1 рулон)",
+        "price": "449 ₽",
+        "oldprice": "499 ₽",
+        "img": "./img/stock/rkp350-ty.png"
+    },
+    "stock-2" : {
+        "name": "Пена монтажная ТЕХНОНИКОЛЬ MASTER 65 профессиональная всесезонная",
+        "price": "495 ₽",
+        "oldprice": "660 ₽",
+        "img": "./img/stock/master-65.png"
+    },
+    "stock-3" : {
+        "name": "Сетка Рабица яч. 50х50/1,5х10 м-ОЦ",
+        "price": "1 499 ₽",
+        "oldprice": "1 890 ₽",
+        "img": "./img/stock/rabitz.png"
+    },
+    "stock-4" : {
+        "name": "Металлочерепица, цвет коричневый, 1.18 х 1.15 м",
+        "price": "769 ₽",
+        "oldprice": "999 ₽",
+        "img": "./img/stock/metallic.png"
+    }
+}
